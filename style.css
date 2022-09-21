@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@500&display=swap');
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .app-cont {
     margin: 16px;
   }
+
   .nav-cont {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
-  
+
   .header-img {
     position: absolute;
     top: 0;
@@ -19,13 +22,31 @@
   .header-h1 {
     font-size: 50px;
     font-family: Playfair Display;
-    color: #1A2236;
+    color: #1a2236;
     margin-top: 60px;
   }
 
   .header-p {
     height: 130px;
     width: 300px;
-    color: #1A2236;
+    color: #1a2236;
+    margin: 20px 0;
+    font-family: Poppins;
+    font-size: 14px;
+  }
+
+  .start-btn {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    background: #1a2236;
+    padding: 5px 0;
+  }
+
+  .btn-h2 {
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
   }
 }
