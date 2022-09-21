@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@500&display=swap');
 
 @media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    background-image: url("images/image_geometry_1.png");
+    background-repeat: no-repeat;
+  }
+
   .app-cont {
     margin: 16px;
   }
@@ -20,33 +26,42 @@
   }
 
   .header-h1 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
     font-size: 50px;
-    font-family: Playfair Display;
+    font-family: "Playfair Display", sans-serif;
     color: #1a2236;
     margin-top: 60px;
   }
 
   .header-p {
-    height: 130px;
-    width: 300px;
-    color: #1a2236;
-    margin: 20px 0;
-    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    height: 130px;
+    width: 269px;
+    margin: 20px 0;
+    font-family: "Poppins", sans-serif;
+    color: #1a2236;
   }
 
   .start-btn {
-    width: 100%;
+    width: 288px;
     text-align: center;
     margin: 20px 0;
     background: #1a2236;
-    padding: 5px 0;
-  }
-
-  .btn-h2 {
+    padding: 12px 0;
     color: white;
-    font-family: 'Poppins';
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
+  }
+
+  .header-bottom-img {
+    position: absolute;
+    left: 0;
   }
 }
