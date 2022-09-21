@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@500&display=swap');
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    background-image: url("images/image_geometry_1.png");
+    background-repeat: no-repeat;
+  }
+
+  header {
+    background-image: url("images/image_geometry_2-1.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 630px;
+  }
+
+  .header-cont {
+    margin: 16px;
+  }
+
+  .nav-cont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header-h1 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 50px;
+    font-family: "Playfair Display", sans-serif;
+    color: #1a2236;
+    margin-top: 60px;
+  }
+
+  .header-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    height: 130px;
+    width: 269px;
+    margin: 20px 0;
+    font-family: "Poppins", sans-serif;
+    color: #1a2236;
+  }
+
+  .start-btn {
+    width: 288px;
+    text-align: center;
+    margin: 20px 0;
+    background: #1a2236;
+    padding: 12px 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
