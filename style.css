@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@media screen and (max-width: 600px){
+  .app-cont {
+    margin: 16px;
+  }
+  .nav-cont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .header-h1 {
+    font-size: 50px;
+    font-family: Playfair Display;
+    color: #1A2236;
+    margin-top: 60px;
+  }
+
+  .header-p {
+    height: 130px;
+    width: 300px;
+    color: #1A2236;
+  }
+}
