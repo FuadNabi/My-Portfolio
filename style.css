@@ -21,7 +21,6 @@
 
   .header-h1 {
     font-size: 50px;
-    font-family: Playfair Display;
     color: #1a2236;
     margin-top: 60px;
   }
@@ -31,7 +30,6 @@
     width: 300px;
     color: #1a2236;
     margin: 20px 0;
-    font-family: Poppins;
     font-size: 14px;
   }
 
@@ -45,7 +43,6 @@
 
   .btn-h2 {
     color: white;
-    font-family: 'Poppins';
     font-weight: 500;
     font-size: 16px;
   }
