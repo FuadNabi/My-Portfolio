@@ -9,7 +9,14 @@
     background-repeat: no-repeat;
   }
 
-  .app-cont {
+  header {
+    background-image: url("images/image_geometry_2-1.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 630px;
+  }
+
+  .header-cont {
     margin: 16px;
   }
 
@@ -58,10 +65,5 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
-  }
-
-  .header-bottom-img {
-    position: absolute;
-    left: 0;
   }
 }
