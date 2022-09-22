@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@600&display=swap');
 
 @media screen and (max-width: 600px) {
   body {
@@ -65,5 +67,248 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
+  }
+
+  .start-btn-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-img {
+    margin-left: 20px;
+  }
+
+  .start-btn:hover {
+    background-color: white;
+    color: #1a2236;
+    border: 1px solid #1a2236;
+    transition: 300ms;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-row: 6;
+    grid-column: 1;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .project-cont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects-h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    margin: 40px 0 32px 16px;
+  }
+
+  .project-info {
+    background-color: #1a2236;
+    padding: 20px;
+  }
+
+  .project-img {
+    float: left;
+    margin-bottom: -2px;
+  }
+
+  .project-names {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 80%;
+    color: white;
+    margin: 0 0 16px 0;
+  }
+
+  .project-lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .project-li {
+    background: #98dede;
+    color: #1a2236;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.3334px;
+    line-height: 80%;
+    margin: 0 5px;
+    padding: 6px 10px;
+    text-align: center;
+    white-space: nowrap;
+    list-style-type: none;
+  }
+
+  .project-li:first-child {
+    margin-left: 0;
+  }
+
+  .project-btn {
+    background: #1a2236;
+    border: 1px solid white;
+    padding: 10px 15px 10px 10px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+  }
+
+  .project-btn:hover {
+    color: #1a2236;
+    background-color: white;
+    transition: 300ms;
+    padding: 12px 48px 12px 48px;
+  }
+
+  .project-btn-icon {
+    font-size: 15px;
+    color: white;
+    margin-left: 12px;
+  }
+
+  .project-btn:hover > .project-btn-icon {
+    color: #1a2236;
+  }
+
+  .about-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cv-cont {
+    margin: 0 16px;
+  }
+
+  .about-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    height: 130px;
+    margin: 20px 0;
+    font-family: "Poppins", sans-serif;
+    color: #1a2236;
+    width: 100%;
+  }
+
+  .about-btn {
+    width: 288px;
+    text-align: center;
+    margin: 20px 0;
+    background: #1a2236;
+    padding: 13px 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .about-btn-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .start-icon {
+    color: white;
+    font-size: 24;
+    margin-left: 20px;
+  }
+
+  .skill-grid {
+    display: grid;
+    gap: 15px;
+    margin: 20px 15px 10px 15px;
+  }
+
+  .skill-conts {
+    padding: 0;
+  }
+
+  .skill-cont {
+    background: #1c528a;
+    padding: 50px 0 0 50px;
+    width: 239px;
+    height: 239px;
+    list-style: none;
+  }
+
+  .skill-cont:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .red-back {
+    background: #e2505c;
+  }
+
+  .yellow-back {
+    background: #febf52;
+  }
+
+  .skill-img {
+    background-image: url("images/hash.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: 219px;
+  }
+
+  .skill-img-second {
+    background-image: url("images/ic_framework.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: 239px;
+  }
+
+  .skill-img-third {
+    background-image: url("images/ic_skills.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: 239px;
+  }
+
+  .lang-h3 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    margin: 0;
+  }
+
+  .lang-ul {
+    padding: 0;
+  }
+
+  .lang-li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.0525em;
+    color: white;
+    white-space: nowrap;
+    list-style-type: none;
   }
 }
