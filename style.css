@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@600&display=swap');
 
 @media screen and (max-width: 600px) {
   body {
@@ -81,6 +82,10 @@
     grid-column: 1;
   }
 
+  p {
+    margin: 0;
+  }
+
   .project-cont {
     display: flex;
     flex-direction: column;
@@ -124,8 +129,7 @@
     padding: 0;
   }
 
-  .project-li{
-    margin: 0;
+  .project-li {
     background: #98dede;
     color: #1a2236;
     font-family: "Poppins", sans-serif;
@@ -164,13 +168,108 @@
     padding: 12px 48px 12px 48px;
   }
 
-  .project-btn:hover > .project-btn-icon{
-    color: #1a2236;
-  }
-
   .project-btn-icon {
     font-size: 15px;
     color: white;
     margin-left: 12px;
+  }
+
+  .project-btn:hover > .project-btn-icon {
+    color: #1a2236;
+  }
+
+  .cv-cont {
+    margin: 0 16px;
+  }
+
+  .about-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    height: 130px;
+    margin: 20px 0;
+    font-family: "Poppins", sans-serif;
+    color: #1a2236;
+    width: 100%;
+  }
+
+  .start-icon {
+    color: white;
+    font-size: 24;
+    margin-left: 20px;
+  }
+
+  .start-btn > .start-icon:hover {
+    color: #1a2236;
+  }
+
+  .skill-grid {
+    display: grid;
+    gap: 15px;
+    margin: 20px 15px 25px 15px;
+  }
+
+  .skill-cont {
+    background: #1c528a;
+    padding: 50px 0 0 50px;
+    width: 239px;
+    height: 239px;
+  }
+
+  .red-back {
+    background: #e2505c;
+  }
+
+  .yellow-back {
+    background: #febf52;
+  }
+
+  .skill-img {
+    background-image: url("images/hash.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: 219px;
+  }
+
+  .skill-img-second {
+    background-image: url("images/ic_framework.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: 239px;
+  }
+
+  .skill-img-third {
+    background-image: url("images/ic_skills.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    height: 239px;
+  }
+
+  .lang-h3 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    margin: 0;
+  }
+
+  .lang-ul {
+    padding: 0;
+  }
+
+  .lang-li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.0525em;
+    color: white;
+    white-space: nowrap;
+    list-style-type: none;
   }
 }
