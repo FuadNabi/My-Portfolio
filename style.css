@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@500&display=swap');
 
@@ -65,5 +66,85 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
+  }
+
+  .project-cont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects-h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    margin: 40px 0 32px 16px;
+  }
+
+  .project-info {
+    background-color: #1a2236;
+    padding: 20px;
+  }
+
+  .project-img {
+    float: left;
+    margin-bottom: -2px;
+  }
+
+  .project-names {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 80%;
+    color: white;
+    margin: 0 0 16px 0;
+  }
+
+  .project-lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .project-p {
+    margin: 0;
+    background: #98dede;
+    color: #1a2236;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10.3334px;
+    line-height: 80%;
+    margin: 0 5px;
+    padding: 6px 10px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .project-p:first-child {
+    margin-left: 0;
+  }
+
+  .project-btn {
+    background: #1a2236;
+    border: 1px solid white;
+    padding: 10px 15px 10px 10px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: white;
+  }
+
+  .project-btn-icon {
+    font-size: 15px;
+    color: white;
+    margin-left: 12px;
   }
 }
