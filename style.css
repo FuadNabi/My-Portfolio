@@ -69,6 +69,16 @@
     font-size: 16px;
   }
 
+  .start-btn-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-img {
+    margin-left: 20px;
+  }
+
   .start-btn:hover {
     background-color: white;
     color: #1a2236;
@@ -201,14 +211,28 @@
     width: 100%;
   }
 
+  .about-btn {
+    width: 288px;
+    text-align: center;
+    margin: 20px 0;
+    background: #1a2236;
+    padding: 13px 0;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .about-btn-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .start-icon {
     color: white;
     font-size: 24;
     margin-left: 20px;
-  }
-
-  .start-btn > .start-icon:hover {
-    color: #1a2236;
   }
 
   .skill-grid {
