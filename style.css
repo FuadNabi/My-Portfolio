@@ -178,6 +178,12 @@
     color: #1a2236;
   }
 
+  .about-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .cv-cont {
     margin: 0 16px;
   }
@@ -208,7 +214,11 @@
   .skill-grid {
     display: grid;
     gap: 15px;
-    margin: 20px 15px 25px 15px;
+    margin: 20px 15px 10px 15px;
+  }
+
+  .skill-conts {
+    padding: 0;
   }
 
   .skill-cont {
@@ -216,6 +226,11 @@
     padding: 50px 0 0 50px;
     width: 239px;
     height: 239px;
+    list-style: none;
+  }
+
+  .skill-cont:not(:last-child) {
+    margin-bottom: 16px;
   }
 
   .red-back {
