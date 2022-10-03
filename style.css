@@ -131,15 +131,16 @@
   }
 
   .project-lang {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; */
     margin-bottom: 20px;
     padding: 0;
   }
 
   .project-li {
+    float: left;
     background: #98dede;
     color: #1a2236;
     font-family: "Poppins", sans-serif;
@@ -159,6 +160,7 @@
   }
 
   .project-btn {
+    margin-top: 20px;
     background: #1a2236;
     border: 1px solid white;
     padding: 10px 15px 10px 10px;
