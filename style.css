@@ -311,4 +311,31 @@
     white-space: nowrap;
     list-style-type: none;
   }
+  .contact-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f9f9fa;
+    background-image: url("images/image_geometry_1.png");
+    background-repeat: no-repeat;
+    margin-top: 25px;
+  }
+
+  .contact-title {
+    margin-top: 106px;
+  }
+
+  .contact-margin {
+    margin: 0 14px 0 18px;
+  }
+
+  .contact-h1 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 50px;
+    font-family: "Playfair Display", sans-serif;
+    color: #1a2236;
+  }
 }
