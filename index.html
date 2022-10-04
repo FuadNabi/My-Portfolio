@@ -207,18 +207,21 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
           </div>
         </div>
-        <form class="contact-form" action="" method="post">
+        <form class="contact-form" action="https://formspree.io/f/xnqrvgwb" method="post">
             <ul class="contact-form-ul">
               <li class="contact-form-li">
                 <label class="contact-form-li-label" for="user-name">Your name</label>
-                <input class="contact-form-li-input" type="text" name="user-name" id="user-name" maxlength="30" placeholder="Enter your name here...">
+                <input class="contact-form-li-input" type="text" name="user-name" id="user-name" maxlength="30" required placeholder="Enter your name here...">
               </li>
               <li class="contact-form-li">
                 <label class="contact-form-li-label" for="user-email">Your email</label>
-                <input class="contact-form-li-input" type="email" name="user-email" id="user-email" maxlength="30" placeholder="Enter your email here...">
+                <input class="contact-form-li-input" type="email" name="user-email" id="user-email" required placeholder="Enter your email here...">
               </li>
-              <li class="contact-form-li">
-                <textarea rows="4" cols="50" name="comment" form="usrform" class="contact-form-textarea" placeholder="Enter your message here..."></textarea>
+              <li class="contact-form-li contact-form-li-last-child">
+                <textarea name="message" class="contact-form-textarea" maxlength="500" required placeholder="Enter your message here..."></textarea>
+              </li>
+              <li>
+                <button class="start-btn" type="submit">Start collaboration</button>
               </li>
             </ul>
         </form>

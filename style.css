@@ -342,7 +342,6 @@
   .contact-form-ul {
     list-style-type: none;
     padding: 0px;
-
   }
 
   .contact-form-li {
@@ -399,5 +398,9 @@
   .p-height {
     height: auto;
     margin-bottom: 32px;
+  }
+
+  .contact-form-li-last-child {
+    margin-bottom: 0px;
   }
 }
