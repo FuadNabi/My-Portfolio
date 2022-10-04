@@ -311,4 +311,133 @@
     white-space: nowrap;
     list-style-type: none;
   }
+
+  .contact-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f9f9fa;
+    background-image: url("images/image_geometry_1.png");
+    background-repeat: no-repeat;
+    margin-top: 25px;
+  }
+
+  .contact-title {
+    margin-top: 106px;
+  }
+
+  .contact-margin {
+    margin: 0 14px 0 18px;
+  }
+
+  .contact-h1 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 50px;
+    font-family: "Playfair Display", sans-serif;
+    color: #1a2236;
+  }
+
+  .contact-form-ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .contact-form-li {
+    background-color: white;
+    border: 1px solid #dfdfe0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+
+  .contact-form-li:hover {
+    border: 1px solid #1a2236;
+  }
+
+  .contact-form-li-label {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #7d7d84;
+    margin: 4px 0 0 16px;
+  }
+
+  .contact-form-li-input {
+    border: none;
+    margin: 4px 16px 8px 16px;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  .contact-form-li-input:focus {
+    outline: none;
+  }
+
+  .contact-form-textarea {
+    width: 268px;
+    height: 95px;
+    margin: 15px 0 0 16px;
+    padding: 0;
+    border: none;
+  }
+
+  .contact-form-textarea:focus {
+    outline: none;
+  }
+
+  .p-height {
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .contact-form-li-last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-cont {
+    background-color: #1a2236;
+    margin-top: 24px;
+    height: 150px;
+  }
+
+  .footer-resume-img {
+    width: 22px;
+    height: 22px;
+    margin-left: 16px;
+  }
+
+  .footer-resume {
+    padding: 32px 0 0 16px;
+  }
+
+  .footer-resume > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #92dcdc;
+    text-decoration: none;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
 }
