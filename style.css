@@ -338,4 +338,34 @@
     font-family: "Playfair Display", sans-serif;
     color: #1a2236;
   }
+
+  .contact-form-ul {
+    list-style-type: none;
+    padding: 0px;
+
+  }
+
+  .contact-form-li {
+    border: 1px solid #dfdfe0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form-li-label {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #7d7d84;
+  }
+
+  .contact-form-li-input {
+    border: none;
+    margin: 4px 16px 8px 16px;
+  }
+
+  .contact-form-li-input:focus {
+    outline: none;
+  }
 }
