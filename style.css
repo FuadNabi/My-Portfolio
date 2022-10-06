@@ -465,10 +465,37 @@ p {
 
   header {
     background-image: none;
+    height: 977px;
+  }
+
+  .header-grid {
+    display: grid;
+    width: 100%;
+    gap: 0;
+    grid-template-columns: repeat(2, 50%);
+    grid-row: auto;
+  }
+
+  .header-background {
     background-image: url("images/header-background.png");
     background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 877px;
+  }
+
+  .header-flex {
+    display: flex;
+    height: 877px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-image: url("images/image_dots.png");
+    background-repeat: no-repeat;
     background-position: bottom right;
-    height: 977px;
+    align-items: center;
+    justify-content: center;
   }
 
   .header-cont {
@@ -520,6 +547,7 @@ p {
     line-height: 110px;
     color: #1a2236;
     margin-bottom: 60px;
+    margin-top: 0;
   }
 
   .header-p {
@@ -531,8 +559,8 @@ p {
     letter-spacing: -0.01em;
     color: #1a2236;
     margin: 0;
-    width: 484px;
     height: auto;
+    white-space: nowrap;
   }
 
   .start-btn {
@@ -544,15 +572,6 @@ p {
     text-align: center;
     color: #fff;
     margin-top: 59px;
-  }
-
-  .header-texts {
-    margin: 192px 0 0 160px;
-    background-image: url("images/image_dots.png");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    width: 40%;
-    height: 686px;
   }
 
   .projects-cont {
@@ -588,6 +607,7 @@ p {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 0;
+    overflow: scroll;
     width: 100%;
   }
 
@@ -641,6 +661,7 @@ p {
   .project-number-1 {
     grid-column: 2 / 11;
     grid-row: 1 / 3;
+    width: min-content;
   }
 
   .project-number-2 {
@@ -705,6 +726,7 @@ p {
     position: relative;
     bottom: 8px;
     right: 1px;
+    width: min-content;
   }
 
   .project-number-5 {
@@ -784,6 +806,7 @@ p {
     grid-row: 6 / 7;
     grid-column: 5 / 11;
     margin: -20px 0 0 -51px;
+    width: min-content;
   }
 
   .about-cont {
@@ -800,10 +823,16 @@ p {
 
   .skill-conts {
     display: grid;
-    grid-template-columns: repeat(2, 289px);
-    grid-template-rows: repeat(2, 289px);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     gap: 0;
     margin: 0;
+  }
+
+  .skill-cont {
+    padding: 51px 54px 0 50px;
+    height: auto;
+    width: auto;
   }
 
   .skill-cont:not(:last-child) {
@@ -822,6 +851,7 @@ p {
   .skill-cont-2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    padding-right: 114px;
   }
 
   .skill-cont-3 {
