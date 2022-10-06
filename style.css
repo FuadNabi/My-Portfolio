@@ -445,6 +445,10 @@ p {
   margin-top: 30px;
 }
 
+.project-grid-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -572,7 +576,7 @@ p {
   .project-grid-desktop {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 0;
     width: 100%;
   }
@@ -694,6 +698,7 @@ p {
     grid-column: 6 / 11;   
     position: relative;
     bottom: 8px;
+    right: 1px;
   }
 
   .project-number-5 {
@@ -773,5 +778,64 @@ p {
     grid-row: 6 / 7;
     grid-column: 5 / 11;
     margin: -20px 0 0px -51px
+  }
+
+  .about-cont {
+    margin: 160px;
+    flex-direction: row-reverse;
+    align-items: revert;
+  }
+
+  .cv-cont {
+    width: 446px;
+    margin: 0 0 0 96px;
+  }
+
+  .skill-conts {
+    display: grid;
+    grid-template-columns: repeat(2, 289px);
+    grid-template-rows: repeat(2, 289px);
+    gap: 0;
+    margin: 0;
+  }
+
+  .skill-cont:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .skill-grid {
+    margin: 0;
+  }
+
+  .skill-cont-1 {
+    grid-row: 1 / 2 ;
+    grid-column: 1 / 2;
+  }
+
+  .skill-cont-2 {
+    grid-row: 1 / 2 ;
+    grid-column: 2 / 3;
+  }
+
+  .skill-cont-3 {
+    grid-row: 2 / 3 ;
+    grid-column: 1 / 2;
+  }
+
+  .skill-background {
+    background-image: url("images/image_dots_with_teal.png");
+    grid-row: 2 / 3 ;
+    grid-column: 2 / 3;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  
+  .cv-h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 100%;
+    color: #1a2236;
+    margin-top: 0;
   }
 }
