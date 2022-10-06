@@ -453,6 +453,10 @@ p {
   display: none;
 }
 
+.footer-cv {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
