@@ -227,6 +227,26 @@ p {
   font-size: 16px;
 }
 
+.about-btn:hover {
+  background: #fff;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+}
+
+.btn-img-icon-invert {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+.about-btn:hover > .about-btn-flex > .btn-img > .btn-img-icon-invert {
+  display: block;
+}
+
+.about-btn:hover > .about-btn-flex > .btn-img > .btn-img-icon {
+  display: none;
+}
+
 .about-btn-flex {
   display: flex;
   align-items: center;
