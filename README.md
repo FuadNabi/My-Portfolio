@@ -1,13 +1,19 @@
 # ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portfolio
-
+![screenshot](Screenshot.png)
 
 
 ## Built With
 
 - HTML
 - CSS
+
+
+## Live Demo
+
+[Github Pages Link](https://fuadnabi.github.io/My-Portfolio/)
+
 
 ### Setup
 If you want to try this application locally, follow the steps below:
