@@ -35,6 +35,62 @@ header {
   display: none;
 }
 
+.mobile-nav-cont-ul {
+  display: none;
+  overflow: hidden;
+}
+
+.show-nav-cont-ul.open {
+  right: 0;
+}
+
+.show-nav-cont-ul {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  top: -16px;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background-image:
+    url("images/Group\ 98.png"),
+    url("images/Group\ 51.png"),
+    url("images/image_geometry_menu_2.png");
+  background-repeat: no-repeat;
+  background-position: top left, 82% 18%, bottom center;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.close-btn {
+  z-index: 99;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.nav-cont-li {
+  text-align: center;
+}
+
+.nav-cont-li > a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 300%;
+  text-align: center;
+  color: black;
+}
+
 .header-img {
   position: absolute;
   top: 0;
@@ -235,6 +291,10 @@ p {
   background: #fff;
   color: #1a2236;
   border: 1px solid #1a2236;
+}
+
+.skill-background {
+  display: none;
 }
 
 .btn-img-icon-invert {
@@ -889,6 +949,7 @@ p {
     background-repeat: no-repeat;
     background-position: bottom right;
     list-style: none;
+    display: block;
   }
 
   .cv-h1 {
@@ -1052,5 +1113,17 @@ p {
     font-size: 18px;
     line-height: 27px;
     text-align: center;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  .show-nav-cont-ul {
+    display: none;
+  }
+
+  .mobile-nav-cont-ul {
+    display: none;
   }
 }
