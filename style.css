@@ -688,7 +688,7 @@ p {
 
   .project-grid-desktop {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 0;
     overflow: scroll;
