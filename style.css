@@ -635,6 +635,16 @@ p {
   outline: none;
 }
 
+.volidation-msg {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  color: red;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  text-align: center;
+}
+
 .p-height {
   height: auto;
   margin-bottom: 32px;
