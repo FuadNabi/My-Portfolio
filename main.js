@@ -1,6 +1,7 @@
-import projectComponent from './projectComponent.js';
-import projectDesktopComponent from './projectDesktopComponent.js';
-import projectsPopup from './projectsPopup.js';
+import projectComponent from './src/projectComponent.js';
+import projectDesktopComponent from './src/projectDesktopComponent.js';
+import projectsPopup from './src/projectsPopup.js';
+import projectsData from './src/projectsData.js';
 
 const navbar = document.querySelector('#nav-bar');
 const closeBtn = document.querySelector('#close-btn');
@@ -9,86 +10,7 @@ const navLinks = Array.from(document.querySelectorAll('.menu-link'));
 const projectsGrid = document.querySelector('.project-grid');
 const projectsGridDesktop = document.querySelector('.project-grid-desktop');
 const projectsCont = document.querySelector('.projects-cont');
-const projectsData = [
-  {
-    id: 1,
-    name: 'Project name',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    featured: 'project-1-featured',
-    images: {
-      mobile: ['images/Rectangle 21.jpg', 'images/Rectangle 21.jpg', 'images/Rectangle 21.jpg', 'images/Rectangle 21.jpg'],
-      desktop: ['images/project-1.png', 'images/project-1.png', 'images/project-1.png', 'images/project-1.png'],
-    },
-    technologies: ['HTML/CSS', 'Ruby and Rails', 'Javascript'],
-    liveVersionLink: '#',
-    linkToSource: '#',
-  },
-  {
-    id: 2,
-    name: 'Project name',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    featured: 'project-2-featured',
-    images: {
-      mobile: ['images/Rectangle 22.jpg', 'images/Rectangle 22.jpg', 'images/Rectangle 22.jpg', 'images/Rectangle 22.jpg'],
-      desktop: ['images/Rectangle 22.jpg', 'images/Rectangle 22.jpg', 'images/Rectangle 22.jpg', 'images/Rectangle 22.jpg'],
-    },
-    technologies: ['HTML/CSS', 'Ruby and Rails', 'Javascript'],
-    liveVersionLink: '#',
-    linkToSource: '#',
-  },
-  {
-    id: 3,
-    name: 'Project name',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    featured: 'project-3-featured',
-    images: {
-      mobile: ['images/Rectangle 23.jpg', 'images/Rectangle 23.jpg', 'images/Rectangle 23.jpg', 'images/Rectangle 23.jpg'],
-      desktop: ['images/3-project.png', 'images/3-project.png', 'images/3-project.png', 'images/3-project.png'],
-    },
-    technologies: ['HTML/CSS', 'Ruby and Rails', 'Javascript'],
-    liveVersionLink: '#',
-    linkToSource: '#',
-  },
-  {
-    id: 4,
-    name: 'Project name',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    featured: 'project-4-featured',
-    images: {
-      mobile: ['images/Rectangle 24.jpg', 'images/Rectangle 24.jpg', 'images/Rectangle 24.jpg', 'images/Rectangle 24.jpg'],
-      desktop: ['images/4-projcet.png', 'images/4-projcet.png', 'images/4-projcet.png', 'images/4-projcet.png'],
-    },
-    technologies: ['HTML/CSS', 'Ruby and Rails', 'Javascript'],
-    liveVersionLink: '#',
-    linkToSource: '#',
-  },
-  {
-    id: 5,
-    name: 'Project name',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    featured: 'project-5-featured',
-    images: {
-      mobile: ['images/Rectangle 25.jpg', 'images/Rectangle 25.jpg', 'images/Rectangle 25.jpg', 'images/Rectangle 25.jpg'],
-      desktop: ['images/5-project.png', 'images/5-project.png', 'images/5-project.png', 'images/5-project.png'],
-    },
-    technologies: ['HTML/CSS', 'Ruby and Rails', 'Javascript'],
-    liveVersionLink: '#',
-    linkToSource: '#',
-  },
-  {
-    id: 6,
-    name: 'Project name',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    featured: 'project-6-featured',
-    images: {
-      mobile: ['images/Rectangle 26.jpg', 'images/Rectangle 26.jpg', 'images/Rectangle 26.jpg', 'images/Rectangle 26.jpg'],
-      desktop: ['images/project-6.png', 'images/project-6.png', 'images/project-6.png', 'images/project-6.png'],
-    },
-    technologies: ['HTML/CSS', 'Ruby and Rails', 'Javascript'],
-    liveVersionLink: '#',
-    linkToSource: '#',
-  },
-];
+
 const projectsListItems = projectsData.reduce((previous, current) => `${previous}${projectComponent(current)}`, '');
 
 function toggleMenu() {

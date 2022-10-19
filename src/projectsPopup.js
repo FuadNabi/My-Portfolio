@@ -1,18 +1,18 @@
 function projectTechnologies(technologies) {
-    let result = '';
-    technologies.forEach((tech) => {
-      result = `${result}<li class="proj-popup-li">${tech}</li>\n`;
-    });
-    return result;
-  }
-  function projectImages(images) {
-    let result = '';
-    images.forEach((image) => {
-      result = `${result}<img src="${image}" alt="">\n`;
-    });
-    return result;
-  }
-  export default (projectData) => `
+  let result = '';
+  technologies.forEach((tech) => {
+    result = `${result}<li class="proj-popup-li">${tech}</li>\n`;
+  });
+  return result;
+}
+function projectImages(images) {
+  let result = '';
+  images.forEach((image) => {
+    result = `${result}<img src="${image}" alt="">\n`;
+  });
+  return result;
+}
+export default (projectData) => `
   <div class="proj-popup">
     <div class="proj-popup-background">
       <button class="proj-close-btn">
@@ -44,8 +44,3 @@ function projectTechnologies(technologies) {
     </div>
   </div>
   `;
-  
-  
-  
-  
-  
