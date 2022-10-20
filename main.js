@@ -81,3 +81,35 @@ const projectPopupBtns = Array.from(document.querySelectorAll('.project-btn'));
 projectPopupBtns.forEach((elem) => {
   elem.addEventListener('click', (event) => openPopup(event.currentTarget.dataset.projectId));
 });
+
+const storageKey = 'contactFormLocalData';
+const formName = document.querySelector('#user-name');
+const formEmail = document.querySelector('#user-email');
+const formMsg = document.querySelector('#user-msg');
+const formFields = document.querySelectorAll('.input-field');
+
+function loadFromLocalData() {
+  const dataLoaded = JSON.parse(localStorage.getItem(storageKey));
+  formName.value = dataLoaded.name;
+  formEmail.value = dataLoaded.email;
+  formMsg.value = dataLoaded.msg;
+}
+
+function saveLocalData() {
+  const savedData = {
+    name: formName.value,
+    email: formEmail.value,
+    msg: formMsg.value,
+  };
+  localStorage.setItem(storageKey, JSON.stringify(savedData));
+}
+
+window.onload = () => {
+  loadFromLocalData();
+};
+
+formFields.forEach((field) => {
+  field.addEventListener('change', () => {
+    saveLocalData();
+  });
+});
