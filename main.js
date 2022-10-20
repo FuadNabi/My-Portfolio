@@ -103,3 +103,13 @@ function saveLocalData() {
   };
   localStorage.setItem(storageKey, JSON.stringify(savedData));
 }
+
+window.onload = () => {
+  loadFromLocalData();
+};
+
+formFields.forEach((field) => {
+  field.addEventListener('change', () => {
+    saveLocalData();
+  });
+});
