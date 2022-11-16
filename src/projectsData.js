@@ -1,16 +1,16 @@
 export default [
   {
     id: 1,
-    name: 'Project name',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    name: 'Capstone',
+    description: 'This is a project confirming that I have properly understood everything learned so far from the first module.',
     featured: 'project-1-featured',
     images: {
-      mobile: ['images/Rectangle 21.jpg', 'images/Rectangle 21.jpg', 'images/Rectangle 21.jpg', 'images/Rectangle 21.jpg'],
-      desktop: ['images/project-1.png', 'images/project-1.png', 'images/project-1.png', 'images/project-1.png'],
+      mobile: ['images/capstone.jpg', 'images/Rectangle 21.jpg', 'images/Rectangle 21.jpg', 'images/Rectangle 21.jpg'],
+      desktop: ['images/capstone.jpg', 'images/project-1.png', 'images/project-1.png', 'images/project-1.png'],
     },
-    technologies: ['HTML/CSS', 'Ruby and Rails', 'Javascript'],
-    liveVersionLink: '#',
-    linkToSource: '#',
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    liveVersionLink: 'https://fuadnabi.github.io/Week-One-Capstone/',
+    linkToSource: 'https://github.com/FuadNabi/Week-One-Capstone',
   },
   {
     id: 2,
