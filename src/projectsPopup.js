@@ -12,6 +12,7 @@ export default (projectData) => `
       <button class="proj-close-btn">
       <img src="images/Union.png" alt="">
       </button>
+      <img src="${projectData.image}" class="popup-image">
       <h3 class="proj-popup-title">${projectData.name}</h3>
       <ul class="proj-popup-ul">
         ${projectTechnologies(projectData.technologies)}
@@ -21,13 +22,9 @@ export default (projectData) => `
           ${projectData.description}
         </p>
         <div class="popup-btns">
-          <button class="proj-popup-btn"><a href="${projectData.liveVersionLink}">See live</a><img src="images/popup-live.png" alt=""></button>
-          <button class="proj-popup-btn"><a href="${projectData.linkToSource}">See source</a><img src="images/popup-source.png" alt=""></button>
+          <a href="${projectData.liveVersionLink}" target= "_blank" class="proj-popup-btn" >See live <span style="display: inherit;"><img src="images/popup-live.png" alt=""></span></a>
+          <a href="${projectData.linkToSource}" target= "_blank" class="proj-popup-btn" >See source <span style="display: inherit;"><img src="images/popup-source.png" alt=""></span></a>
         </div>
-      </div>
-      <div class="popup-proj-movement">
-        <a href="#" class="previous-project-btn movement-text"><img src="images/previous-icon.png" alt=""> Previous project</a>
-        <a href="#" class="next-project-btn movement-text">Next project <img src="images/next-button.png" alt=""></a>
       </div>
     </div>
   </div>

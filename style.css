@@ -92,6 +92,11 @@ header {
   color: black;
 }
 
+.header-flex {
+  display: flex;
+  justify-content: center;
+}
+
 .header-img {
   position: absolute;
   top: 0;
@@ -114,8 +119,6 @@ header {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  height: 130px;
-  width: 269px;
   margin: 20px 0;
   font-family: "Poppins", sans-serif;
   color: #1a2236;
@@ -165,14 +168,17 @@ header {
 }
 
 .proj-popup-background {
-  padding: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .proj-popup-title {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 32 px;
   line-height: 80%;
   color: #1a2236;
   margin: 57px 0 23px 0;
@@ -185,8 +191,8 @@ header {
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 5px;
+  top: 10px;
 }
 
 .proj-popup-ul {
@@ -204,9 +210,15 @@ header {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10.3334px;
+  font-size: 12px;
   line-height: 80%;
   color: #1a2236;
+}
+
+.popup-image {
+  width: 100%;
+  height: 50vh;
+  object-fit: contain;
 }
 
 .proj-popup-imgs {
@@ -218,15 +230,6 @@ header {
   margin: 0;
   width: 100%;
   height: auto;
-}
-
-.proj-small-imgs {
-  margin: 0;
-}
-
-.proj-small-imgs > img {
-  float: left;
-  max-width: 25%;
 }
 
 .popup-text-btns {
@@ -254,16 +257,13 @@ header {
 }
 
 .proj-popup-btn {
+  display: flex;
   background-color: white;
   border: 1px #1a2236 solid;
-  display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   padding: 12px 0;
   align-items: center;
   margin-top: 29px;
-}
-
-.proj-popup-btn > a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -276,6 +276,11 @@ header {
 
 .proj-popup-btn:hover {
   background-color: #1a2236;
+  color: white;
+}
+
+.proj-popup-btn:hover span > img{
+  filter: brightness(11);
 }
 
 .footer-resume > a {
@@ -291,16 +296,8 @@ header {
   text-decoration: none;
 }
 
-.proj-popup-btn:hover a {
-  color: white;
-}
-
 .proj-popup-btn > img {
   margin: 0 20px 0 53px;
-}
-
-.popup-proj-movement {
-  display: none;
 }
 
 p {
@@ -329,20 +326,22 @@ p {
 .project-img {
   width: 100%;
   float: left;
+  height: 190px;
+  object-fit: contain;
   margin-bottom: -2px;
 }
 
-.project-names {
+.project-name {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 80%;
   color: white;
   margin: 0 0 16px 0;
 }
 
-.project-lang {
+.project-languages {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -351,7 +350,7 @@ p {
   padding: 0;
 }
 
-.project-li {
+.project-language {
   background: #98dede;
   color: #1a2236;
   font-family: "Poppins", sans-serif;
@@ -366,7 +365,7 @@ p {
   list-style-type: none;
 }
 
-.project-li:first-child {
+.project-language:first-child {
   margin-left: 0;
 }
 
@@ -387,9 +386,9 @@ p {
 .project-btn:hover {
   color: #1a2236;
   background-color: white;
+  border: 1px solid white;
   transition: 300ms;
   padding: 10px 48px 10px 48px;
-  border: none;
 }
 
 .project-btn-icon {
@@ -707,6 +706,7 @@ p {
     background-image: url("images/header-background.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     width: 100%;
@@ -801,17 +801,23 @@ p {
     margin-top: 59px;
   }
 
+  .projects-h1 {
+    font-size: 72px;
+    color: #1a2236;
+    margin: 0 0 50px 0;
+  }
+
   .projects-cont {
-    margin-top: 210px;
+    margin-top: 110px;
   }
 
   .project-cont {
-    display: block;
-    position: relative;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
 
   .project-img {
-    width: auto;
+    height: 290px;
   }
 
   .grid-background {
@@ -831,20 +837,21 @@ p {
     max-height: 100%;
     overflow-y: auto;
     top: 0;
+    left: 0;
     padding-bottom: 20px;
   }
 
   .proj-popup-background {
     background-color: white;
-    margin: 70px;
+    margin: 40px;
     padding: 3em;
   }
 
   .proj-close-btn > img {
     width: 32px;
     position: absolute;
-    top: 165px;
-    right: 120px;
+    top: 60px;
+    right: 60px;
   }
 
   .proj-popup-ul {
@@ -891,9 +898,8 @@ p {
   }
 
   .popup-text-btns {
-    margin-top: 70px;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
   }
 
   .proj-description {
@@ -1164,5 +1170,11 @@ p {
 
   .mobile-nav-cont-ul {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) { 
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

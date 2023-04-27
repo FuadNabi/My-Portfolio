@@ -10,9 +10,9 @@ function projectTechnologies(technologies) {
 
 export default (projectData) => `
     <div class="project-cont project-number-${projectData.id}">
-      <img src="${projectData.image}" style="width: 100px" alt="Project picture" class="project-img">
+      <img src="${projectData.image}" alt="Project picture" class="project-img">
       <div class="project-info">
-        <h3 class="project-names">
+        <h3 class="project-name">
           ${projectData.name}
         </h3>
         <ul class="project-languages">
