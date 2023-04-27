@@ -5,13 +5,7 @@ function projectTechnologies(technologies) {
   });
   return result;
 }
-function projectImages(images) {
-  let result = '';
-  images.forEach((image) => {
-    result = `${result}<img src="${image}" alt="">\n`;
-  });
-  return result;
-}
+
 export default (projectData) => `
   <div class="proj-popup">
     <div class="proj-popup-background">
@@ -22,12 +16,6 @@ export default (projectData) => `
       <ul class="proj-popup-ul">
         ${projectTechnologies(projectData.technologies)}
       </ul>
-      <div class="proj-popup-imgs">
-        <img class="proj-main-img" src="${projectData.images.mobile[0]}" alt="">
-        <div class="proj-small-imgs">
-          ${projectImages(projectData.images.mobile)}
-        </div>
-      </div>
       <div class="popup-text-btns">
         <p class="proj-description">
           ${projectData.description}

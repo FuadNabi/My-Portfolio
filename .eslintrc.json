@@ -15,6 +15,7 @@
     "no-param-reassign": "off",
     "eol-last": "off",
     "no-empty": "off",
+    "linebreak-style": "off",
     "no-undef": "off",
     "import/extensions": [
       1,

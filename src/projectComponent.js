@@ -2,7 +2,7 @@ function projectTechnologies(technologies) {
   let result = '';
 
   technologies.forEach((tech) => {
-    result = `${result}<li class="project-li">${tech}</li>\n`;
+    result = `${result}<li class="project-language">${tech}</li>\n`;
   });
 
   return result;
@@ -10,12 +10,12 @@ function projectTechnologies(technologies) {
 
 export default (projectData) => `
     <div class="project-cont project-number-${projectData.id}">
-      <img src="${projectData.images.mobile[0]}" alt="Project picture" class="project-img">
+      <img src="${projectData.image}" style="width: 100px" alt="Project picture" class="project-img">
       <div class="project-info">
         <h3 class="project-names">
           ${projectData.name}
         </h3>
-        <ul class="project-lang">
+        <ul class="project-languages">
           ${projectTechnologies(projectData.technologies)}
         </ul>
         <button data-project-id=${projectData.id} class="project-btn">
