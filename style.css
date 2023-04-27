@@ -130,6 +130,7 @@ header {
   margin: 20px 0;
   background: #1a2236;
   padding: 12px 0;
+  border: 1px solid #1a2236;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -1165,10 +1166,6 @@ p {
   }
 
   .show-nav-cont-ul {
-    display: none;
-  }
-
-  .mobile-nav-cont-ul {
     display: none;
   }
 }

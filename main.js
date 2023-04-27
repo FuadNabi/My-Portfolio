@@ -1,6 +1,7 @@
 import projectComponent from './src/projectComponent.js';
 import projectsPopup from './src/projectsPopup.js';
 import projectsData from './src/projectsData.js';
+import headerLinks from './src/headerNav.js';
 
 const navbar = document.querySelector('#nav-bar');
 const closeBtn = document.querySelector('#close-btn');
@@ -8,6 +9,7 @@ const popup = document.querySelector('#popup');
 const navLinks = Array.from(document.querySelectorAll('.menu-link'));
 const projectsGrid = document.querySelector('.project-grid');
 const projectsCont = document.querySelector('.projects-cont');
+const headerNavigation = document.querySelector('.nav-cont-ul');
 
 const projectsListItems = projectsData.reduce((previous, current) => `${previous}${projectComponent(current)}`, '');
 
@@ -86,3 +88,5 @@ formFields.forEach((field) => {
     saveLocalData();
   });
 });
+
+headerNavigation.innerHTML = headerLinks();
