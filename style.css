@@ -284,6 +284,15 @@ header {
   margin: 0 20px 0 53px;
 }
 
+.about-btn > span > img {
+  filter: brightness(12);
+}
+
+.about-btn:hover img {
+  filter: brightness(0);
+  transition: 0.3s;
+}
+
 .proj-popup-btn:hover span > img {
   filter: brightness(11);
 }
@@ -328,7 +337,7 @@ p {
   width: 100%;
   float: left;
   height: 190px;
-  object-fit: contain;
+  object-fit: cover;
   margin-bottom: -2px;
 }
 
@@ -426,20 +435,27 @@ p {
 }
 
 .about-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   width: 288px;
   text-align: center;
   margin: 20px 0;
-  background: #1a2236;
+  background-color: #1a2236;
   padding: 13px 0;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
 
 .about-btn:hover {
-  background: #fff;
   color: #1a2236;
+  background-color: #fff;
   border: 1px solid #1a2236;
 }
 
@@ -451,20 +467,6 @@ p {
   display: none;
   width: 24px;
   height: 24px;
-}
-
-.about-btn:hover > .about-btn-flex > .btn-img > .btn-img-icon-invert {
-  display: block;
-}
-
-.about-btn:hover > .about-btn-flex > .btn-img > .btn-img-icon {
-  display: none;
-}
-
-.about-btn-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .start-icon {
@@ -814,7 +816,7 @@ p {
   }
 
   .project-img {
-    height: 290px;
+    height: 200px;
   }
 
   .grid-background {
