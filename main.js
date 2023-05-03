@@ -10,6 +10,8 @@ const navLinks = Array.from(document.querySelectorAll('.menu-link'));
 const projectsGrid = document.querySelector('.project-grid');
 const projectsCont = document.querySelector('.projects-cont');
 const headerNavigation = document.querySelector('.nav-cont-ul');
+const startButton = document.querySelector('.start-btn');
+const contact = document.querySelector('#contact-id');
 
 const projectsListItems = projectsData.reduce((previous, current) => `${previous}${projectComponent(current)}`, '');
 
@@ -90,3 +92,7 @@ formFields.forEach((field) => {
 });
 
 headerNavigation.innerHTML = headerLinks();
+
+startButton.addEventListener('click', () => {
+  contact.scrollIntoView({ behavior: 'smooth' });
+});

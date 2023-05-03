@@ -507,7 +507,7 @@ p {
   background-image: url("images/hash.png");
   background-position: bottom right;
   background-repeat: no-repeat;
-  height: 219px;
+  height: 239px;
 }
 
 .skill-img-second {
@@ -956,9 +956,7 @@ p {
   }
 
   .skill-cont {
-    padding: 51px 54px 0 50px;
     height: auto;
-    width: auto;
   }
 
   .skill-cont:not(:last-child) {
@@ -977,7 +975,6 @@ p {
   .skill-cont-2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    padding-right: 114px;
   }
 
   .skill-cont-3 {
