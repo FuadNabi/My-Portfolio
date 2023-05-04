@@ -8,31 +8,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <script src="https://kit.fontawesome.com/e2597287a1.js" crossorigin="anonymous"></script>
   <title>Fuad Nabiyev's Portfolio</title>
 </head>
 <body>
   <main class="app-cont">
+    <nav class="nav-cont">
+      <ul class="nav-cont-ul">
+      </ul>
+      <ul class="mobile-nav-cont-ul show-nav-cont-ul" id="popup">
+        <button class="close-btn" id="close-btn"><img src="images/Union.png" alt="Close Button icon"></button>
+        <li class="nav-cont-li menu-link"><a href="#header-id">Hello</a></li>
+        <li class="nav-cont-li menu-link"><a href="#project-id">Portfolio</a></li>            
+        <li class="nav-cont-li menu-link"><a href="#about-id">About</a></li>            
+        <li class="nav-cont-li menu-link"><a href="#contact-id">Contact</a></li>
+      </ul>
+      <nav class="nav-bar" id="nav-bar">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </nav>
+    </nav>
     <header>
       <div class="header-cont">
-        <div class="nav-cont">
-          <ul class="nav-cont-ul">
-            <li class="nav-cont-li"><a href="#header-id">Hello</a></li>
-            <li class="nav-cont-li"><a href="#project-id">Portfolio</a></li>            
-            <li class="nav-cont-li"><a href="#about-id">About</a></li>            
-            <li class="nav-cont-li"><a href="#contact-id">Contact</a></li>
-          </ul>
-          <ul class="mobile-nav-cont-ul show-nav-cont-ul" id="popup">
-            <button class="close-btn" id="close-btn"><img src="images/Union.png" alt=""></button>
-            <li class="nav-cont-li menu-link"><a href="#header-id">Hello</a></li>
-            <li class="nav-cont-li menu-link"><a href="#project-id">Portfolio</a></li>            
-            <li class="nav-cont-li menu-link"><a href="#about-id">About</a></li>            
-            <li class="nav-cont-li menu-link"><a href="#contact-id">Contact</a></li>
-          </ul>
-          <nav class="nav-bar" id="nav-bar">
-            <i class="fa-solid fa-bars fa-xl"></i>
-          </nav>
-        </div>
         <div class="header-grid" id="header-id">
           <div class="header-flex">
             <div class="header-texts">
@@ -56,10 +53,10 @@
       </div>
     </header>
     <section class="projects-cont" id="project-id">
+      <h1 class="projects-h1">
+        Projects
+      </h1>
       <div class="project-grid">
-        <h1 class="projects-h1">
-          Projects
-        </h1>
       </div>
       <div class="project-grid-desktop">
       </div>
@@ -72,15 +69,12 @@
         <div class="about-p">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
         </div>
-        <button class="about-btn">
-          <div class="about-btn-flex">
-            Get my CV  
-            <span class="btn-img">
-              <img class="btn-img-icon" src="images/ic_download.png" alt="Download icon">
-              <img class="btn-img-icon-invert" src="./images/ic_download-invert.png" alt="Download icon">
-            </span>
-          </div>
-        </button>
+        <a class="about-btn"  rel="noopener" target="_blank" href="./Resume.pdf">
+          Get my CV  
+          <span>
+            <img src="./images/ic_download-invert.png" alt="Download icon">
+          </span>
+        </a>
       </div>
       <div class="skill-grid">
         <ul class="skill-conts">
@@ -172,19 +166,17 @@
     <footer class="footer-cont">
       <div class="footer-start">
         <div class="footer-resume">
-          <a href="#">Get my Resume <img src="images/ic_link_teal.png" alt="Go to the link icon" class="footer-resume-img"></a>
+          <a href="./Resume.pdf" rel="noopener" target="_blank">Get my Resume <img src="images/ic_link_teal.png" alt="Go to the link icon" class="footer-resume-img"></a>
         </div>
         <div class="footer-cv">
-          <a href="#">Get my Resume <img src="images/cv-download.png" alt="Go to the link icon" class="footer-cv-img"></a>
+          <a href="./Resume.pdf" rel="noopener" target="_blank">Get my Resume <img src="images/cv-download.png" alt="Go to the link icon" class="footer-cv-img"></a>
         </div>
       </div>
       <div class="footer-links">
-        <a href="" class="footer-link"><img src="images/ic_stackoverflow.png" alt="Stackoverflow link icon"></a>
-        <a href="" class="footer-link"><img src="images/ic_github.png" alt="GitHub link icon"></a>
-        <a href="" class="footer-link"><img src="images/ic_twitter.png" alt="Twitter link icon"></a>
-        <a href="" class="footer-link"><img src="images/ic_linkedin.png" alt="LinkedIn link icon"></a>
-        <a href="" class="footer-link"><img src="images/ic_medium.png" alt="Medium link icon"></a>
-        <a href="" class="footer-link"><img src="images/ic_angellist.png" alt="Angellist link icon"></a>
+        <a href="https://github.com/FuadNabi" rel="noopener" target="_blank" class="footer-link"><img src="images/ic_github.png" alt="GitHub link icon"></a>
+        <a href="https://twitter.com/FuadNabiye73858" rel="noopener" target="_blank" class="footer-link"><img src="images/ic_twitter.png" alt="Twitter link icon"></a>
+        <a href="https://www.linkedin.com/in/fuad-nabiyev/" rel="noopener" target="_blank" class="footer-link"><img src="images/ic_linkedin.png" alt="LinkedIn link icon"></a>
+        <a href="https://medium.com/@fuad.nebiyev95191" rel="noopener" target="_blank" class="footer-link"><img src="images/ic_medium.png" alt="Medium link icon"></a>
       </div>
     </footer>
   </main>

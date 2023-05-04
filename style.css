@@ -30,6 +30,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .nav-cont-ul {
@@ -77,6 +79,11 @@ header {
   padding: 0;
 }
 
+.nav-bar {
+  padding: 10px;
+  background: white;
+}
+
 .nav-cont-li {
   text-align: center;
 }
@@ -90,6 +97,11 @@ header {
   line-height: 300%;
   text-align: center;
   color: black;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: center;
 }
 
 .header-img {
@@ -114,8 +126,6 @@ header {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  height: 130px;
-  width: 269px;
   margin: 20px 0;
   font-family: "Poppins", sans-serif;
   color: #1a2236;
@@ -127,6 +137,7 @@ header {
   margin: 20px 0;
   background: #1a2236;
   padding: 12px 0;
+  border: 1px solid #1a2236;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -152,8 +163,6 @@ header {
 
 .project-grid {
   display: grid;
-  grid-row: 6;
-  grid-column: 1;
 }
 
 .proj-popup {
@@ -167,14 +176,17 @@ header {
 }
 
 .proj-popup-background {
-  padding: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .proj-popup-title {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 32 px;
   line-height: 80%;
   color: #1a2236;
   margin: 57px 0 23px 0;
@@ -187,8 +199,8 @@ header {
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 5px;
+  top: 10px;
 }
 
 .proj-popup-ul {
@@ -206,9 +218,15 @@ header {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 10.3334px;
+  font-size: 12px;
   line-height: 80%;
   color: #1a2236;
+}
+
+.popup-image {
+  width: 100%;
+  height: 50vh;
+  object-fit: contain;
 }
 
 .proj-popup-imgs {
@@ -220,15 +238,6 @@ header {
   margin: 0;
   width: 100%;
   height: auto;
-}
-
-.proj-small-imgs {
-  margin: 0;
-}
-
-.proj-small-imgs > img {
-  float: left;
-  max-width: 25%;
 }
 
 .popup-text-btns {
@@ -256,16 +265,13 @@ header {
 }
 
 .proj-popup-btn {
+  display: flex;
   background-color: white;
   border: 1px #1a2236 solid;
-  display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   padding: 12px 0;
   align-items: center;
   margin-top: 29px;
-}
-
-.proj-popup-btn > a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -278,6 +284,24 @@ header {
 
 .proj-popup-btn:hover {
   background-color: #1a2236;
+  color: white;
+}
+
+.proj-popup-btn > img {
+  margin: 0 20px 0 53px;
+}
+
+.about-btn > span > img {
+  filter: brightness(12);
+}
+
+.about-btn:hover img {
+  filter: brightness(0);
+  transition: 0.3s;
+}
+
+.proj-popup-btn:hover span > img {
+  filter: brightness(11);
 }
 
 .footer-resume > a {
@@ -291,18 +315,6 @@ header {
   line-height: 24px;
   color: #92dcdc;
   text-decoration: none;
-}
-
-.proj-popup-btn:hover a {
-  color: white;
-}
-
-.proj-popup-btn > img {
-  margin: 0 20px 0 53px;
-}
-
-.popup-proj-movement {
-  display: none;
 }
 
 p {
@@ -331,20 +343,22 @@ p {
 .project-img {
   width: 100%;
   float: left;
+  height: 190px;
+  object-fit: fill;
   margin-bottom: -2px;
 }
 
-.project-names {
+.project-name {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 80%;
   color: white;
   margin: 0 0 16px 0;
 }
 
-.project-lang {
+.project-languages {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -353,7 +367,7 @@ p {
   padding: 0;
 }
 
-.project-li {
+.project-language {
   background: #98dede;
   color: #1a2236;
   font-family: "Poppins", sans-serif;
@@ -368,7 +382,7 @@ p {
   list-style-type: none;
 }
 
-.project-li:first-child {
+.project-language:first-child {
   margin-left: 0;
 }
 
@@ -384,14 +398,15 @@ p {
   text-align: center;
   color: white;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .project-btn:hover {
   color: #1a2236;
   background-color: white;
+  border: 1px solid white;
   transition: 300ms;
   padding: 10px 48px 10px 48px;
-  border: none;
 }
 
 .project-btn-icon {
@@ -428,20 +443,27 @@ p {
 }
 
 .about-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   width: 288px;
   text-align: center;
   margin: 20px 0;
-  background: #1a2236;
+  background-color: #1a2236;
   padding: 13px 0;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: 0.3s;
 }
 
 .about-btn:hover {
-  background: #fff;
   color: #1a2236;
+  background-color: #fff;
   border: 1px solid #1a2236;
 }
 
@@ -453,20 +475,6 @@ p {
   display: none;
   width: 24px;
   height: 24px;
-}
-
-.about-btn:hover > .about-btn-flex > .btn-img > .btn-img-icon-invert {
-  display: block;
-}
-
-.about-btn:hover > .about-btn-flex > .btn-img > .btn-img-icon {
-  display: none;
-}
-
-.about-btn-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .start-icon {
@@ -509,7 +517,7 @@ p {
   background-image: url("images/hash.png");
   background-position: bottom right;
   background-repeat: no-repeat;
-  height: 219px;
+  height: 239px;
 }
 
 .skill-img-second {
@@ -678,10 +686,6 @@ p {
   margin-top: 30px;
 }
 
-.project-grid-desktop {
-  display: none;
-}
-
 .contact-p {
   display: none;
 }
@@ -713,6 +717,7 @@ p {
     background-image: url("images/header-background.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     width: 100%;
@@ -737,9 +742,13 @@ p {
 
   .nav-cont {
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     justify-content: center;
-    padding: 38px 0;
+    padding: 15px 0;
     background-color: white;
+    margin: 0;
   }
 
   .nav-cont-ul {
@@ -807,146 +816,38 @@ p {
     margin-top: 59px;
   }
 
-  .projects-cont {
-    margin-top: 210px;
+  .projects-h1 {
+    font-size: 72px;
+    color: #1a2236;
+    margin: 0 0 50px 0;
   }
 
   .project-cont {
-    display: block;
+    display: flex;
     position: relative;
-  }
-
-  .large-project-info {
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    transition: 0.5s;
-  }
-
-  .project-info {
-    padding: 60px 178px 60px 60px;
-  }
-
-  .project-cont:hover > .project-info {
-    opacity: 1;
-  }
-
-  .project-grid {
-    display: none;
-  }
-
-  .project-grid-desktop {
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 0;
-    overflow: scroll;
-    width: 100%;
-  }
-
-  .projects-desktop-h1 {
-    transform: rotate(-90deg);
-    font-family: "Playfair Display", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 110px;
-    line-height: 100%;
-    text-align: left;
-    margin-top: 15px;
-    bottom: 39%;
-    position: absolute;
-  }
-
-  .project-large-item {
-    grid-row: 1 / 3;
-    grid-column: 1 / 2;
-    background-image: url("images/project-dots.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    position: relative;
-    margin-right: 15px;
-  }
-
-  .large-project-name {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 80%;
-    color: #fff;
-    margin: 0;
-    white-space: nowrap;
-  }
-
-  .large-project-langs {
-    margin: 34px 0 60px 0;
-  }
-
-  .large-project-lang {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 80%;
-    color: #1a2236;
-  }
-
-  .project-number-1 {
-    grid-column: 2 / 11;
-    grid-row: 1 / 3;
-    width: min-content;
-  }
-
-  .project-number-1 img {
-    width: 965px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
   }
 
   .project-img {
-    width: auto;
+    height: 100%;
   }
 
-  .project-number-2 {
-    grid-row: 3 / 4;
-    columns: 1 / 3;
-    position: relative;
-    top: 80px;
+  .project-info {
+    height: 80%;
   }
 
-  .small-project-info {
-    padding: 30px;
-    opacity: 0;
-    padding-right: 8px;
-    transition: 0.5s;
-    bottom: 7px;
+  .project-info-width {
     position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
   }
 
-  .small-project-img {
-    width: 465px;
-  }
-
-  .small-project-name {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 80%;
-    color: white;
-    word-break: break-word;
-    margin: 0;
-  }
-
-  .small-project-langs {
-    margin: 20px 0 25px 0;
-  }
-
-  .small-project-lang {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 80%;
-    color: #1a2236;
+  .project-cont:hover div {
+    opacity: 1;
   }
 
   .grid-background {
@@ -958,121 +859,30 @@ p {
     margin: 0 0 -72px 0;
   }
 
-  .project-number-3 {
-    grid-row: 3 / 4;
-  }
-
-  .project-number-4 {
-    grid-row: 4 / 5;
-    grid-column: 6 / 11;
-    position: relative;
-    bottom: 8px;
-    right: 1px;
-    width: min-content;
-  }
-
-  .project-number-5 {
-    grid-row: 4 / 6;
-    grid-column: 1 / 5;
-    position: relative;
-    top: 72px;
-  }
-
-  .medium-project-info {
-    padding: 45px;
-    opacity: 0;
-    padding-right: 213px;
-    transition: 0.5s;
-    bottom: 92px;
-    position: absolute;
-  }
-
-  .medium-project-name {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 80%;
-    color: #fff;
-    margin: 0;
-    white-space: nowrap;
-  }
-
-  .medium-project-langs {
-    margin: 30px 0 45px 0;
-  }
-
-  .medium-project-lang {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 80%;
-    color: #1a2236;
-  }
-
-  .medium-project-img {
-    width: 800px;
-  }
-
-  .grid-background-2 {
-    background-image: url("images/backgorund-2.png");
-    background-repeat: no-repeat;
-    grid-row: 4 / 6;
-    grid-column: 5 / 11;
-    width: 640px;
-    margin: 0 0 18px -52px;
-    background-position: bottom;
-  }
-
-  .grid-background-3 {
-    background-image: url("images/grid-background-3.png");
-    background-repeat: no-repeat;
-    grid-row: 6 / 7;
-    grid-column: 1 / 4;
-    background-position: top left;
-    margin-top: -19px;
-  }
-
-  .grid-background-4 {
-    background-image: url("images/grid-background-4.png");
-    background-repeat: no-repeat;
-    grid-row: 6 / 7;
-    grid-column: 4 / 5;
-    background-position: top left;
-    margin-top: -19px;
-    margin-left: -10px;
-  }
-
-  .project-number-6 {
-    grid-row: 6 / 7;
-    grid-column: 5 / 11;
-    margin: -20px 0 0 -51px;
-    width: min-content;
-  }
-
   .proj-popup {
     position: fixed;
     background: rgba(26, 34, 54, 0.95);
     backdrop-filter: blur(12px);
     width: 100%;
     max-height: 100%;
+    z-index: 9999;
     overflow-y: auto;
     top: 0;
+    left: 0;
     padding-bottom: 20px;
   }
 
   .proj-popup-background {
     background-color: white;
-    margin: 70px;
+    margin: 40px;
     padding: 3em;
   }
 
   .proj-close-btn > img {
     width: 32px;
     position: absolute;
-    top: 165px;
-    right: 120px;
+    top: 60px;
+    right: 60px;
   }
 
   .proj-popup-ul {
@@ -1104,19 +914,24 @@ p {
     max-width: none;
   }
 
-  .proj-small-imgs {
-    margin: 0;
+  .projects-cont {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .proj-small-imgs > img {
-    width: 25%;
-    max-width: none;
+  .project-grid {
+    display: grid;
+    gap: 20px;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .popup-text-btns {
-    margin-top: 70px;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
   }
 
   .proj-description {
@@ -1175,9 +990,7 @@ p {
   }
 
   .skill-cont {
-    padding: 51px 54px 0 50px;
     height: auto;
-    width: auto;
   }
 
   .skill-cont:not(:last-child) {
@@ -1196,7 +1009,6 @@ p {
   .skill-cont-2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    padding-right: 114px;
   }
 
   .skill-cont-3 {
@@ -1384,8 +1196,10 @@ p {
   .show-nav-cont-ul {
     display: none;
   }
+}
 
-  .mobile-nav-cont-ul {
-    display: none;
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
