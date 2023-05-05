@@ -267,6 +267,7 @@ header {
 .proj-popup-btn {
   display: flex;
   background-color: white;
+  transition: 0.5s;
   border: 1px #1a2236 solid;
   justify-content: space-around;
   padding: 12px 0;
@@ -435,7 +436,6 @@ p {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  height: 130px;
   margin: 20px 0;
   font-family: "Poppins", sans-serif;
   color: #1a2236;
@@ -588,6 +588,10 @@ p {
   color: #1a2236;
 }
 
+.contact-p {
+  margin-top: 16px;
+}
+
 .contact-form-ul {
   list-style-type: none;
   padding: 0;
@@ -686,10 +690,6 @@ p {
   margin-top: 30px;
 }
 
-.contact-p {
-  display: none;
-}
-
 .footer-cv {
   display: none;
 }
@@ -762,10 +762,6 @@ p {
     margin: 0 50px 0 0;
   }
 
-  .nav-cont-li:hover {
-    border-bottom: 2px solid #1a2236;
-  }
-
   .nav-cont-li > a {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
@@ -775,6 +771,27 @@ p {
     line-height: 24px;
     text-align: right;
     color: #1a2236;
+    transition: 0.5s;
+  }
+
+  .footer-cv > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #92dcdc;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .nav-cont-li:hover > a {
+    border-bottom: 2px solid #1a2236;
+    font-size: 24px;
   }
 
   .nav-bar {
@@ -844,6 +861,15 @@ p {
     padding: 0;
     opacity: 0;
     transition: 0.5s;
+  }
+
+  .popup-image {
+    width: auto;
+    transition: 1s;
+  }
+
+  .popup-image:hover {
+    height: 80vh;
   }
 
   .project-cont:hover div {
@@ -1061,25 +1087,22 @@ p {
     line-height: 100%;
     text-align: center;
     color: #1a2236;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .contact-p {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 21px;
     letter-spacing: -0.01em;
     color: #1a2236;
     display: block;
+    text-align: center;
   }
 
   .p-height {
     display: none;
-  }
-
-  .contact-title {
-    width: 548px;
   }
 
   .contact-margin {
@@ -1175,18 +1198,11 @@ p {
     margin-left: 24px;
   }
 
-  .footer-cv > a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    color: #92dcdc;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
+  .footer-cv a:hover,
+  .footer-cv a img:hover {
+    transition: 5s;
+    color: #fff;
+    filter: brightness(19);
   }
 
   .close-btn {
