@@ -368,6 +368,10 @@ p {
   padding: 0;
 }
 
+.footer-links a:hover{
+  transform: scale(1.3);
+}
+
 .project-language {
   background: #98dede;
   color: #1a2236;
@@ -436,7 +440,7 @@ p {
   font-size: 14px;
   line-height: 21px;
   letter-spacing: -0.01em;
-  margin: 20px 0;
+  margin: -20px 0;
   font-family: "Poppins", sans-serif;
   color: #1a2236;
   width: 100%;
@@ -449,7 +453,7 @@ p {
   gap: 20px;
   width: 288px;
   text-align: center;
-  margin: 20px 0;
+  margin: 45px 0;
   background-color: #1a2236;
   padding: 13px 0;
   color: white;
