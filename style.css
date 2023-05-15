@@ -77,6 +77,7 @@ header {
   border: none;
   background-color: transparent;
   padding: 0;
+  transition: 0.5s;
 }
 
 .nav-bar {
@@ -694,6 +695,11 @@ p {
   display: none;
 }
 
+.rotate {
+  rotate: 180deg;
+  transition: 0.5s;
+}
+
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -1181,6 +1187,11 @@ p {
 
   .footer-link {
     margin-left: 32px;
+    transition: 1s;
+  }
+
+  .footer-link:hover {
+    rotate: 360deg;
   }
 
   .footer-resume-mobile {

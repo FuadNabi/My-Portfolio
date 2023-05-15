@@ -25,6 +25,7 @@ function openMenu() {
 
 function closeMenu() {
   toggleMenu();
+  closeBtn.classList.toggle('rotate');
 }
 
 function closePopup(popupCont) {
