@@ -19,7 +19,8 @@
 ### Setup
 If you want to try this application locally, follow the steps below:
 
-1. Clone the project using git clone `git@github.com:FuadNabi/setup-and-mobile-first.git`.
+1. Clone the project using git clone `git@github.com:FuadNabi/My-Portfolio
+.git`.
 
 2. Run `cd My-Portfolio`.
 
