@@ -41,7 +41,7 @@ If you want to try this application locally, follow the steps below:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/FuadNabi/setup-and-mobile-first/issues).
+Feel free to check the [issues page](https://github.com/FuadNabi/My-Portfolio/issues).
 
 ## Show your support
 
