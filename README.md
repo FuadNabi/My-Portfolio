@@ -28,7 +28,7 @@ If you want to try this application locally, follow the steps below:
 
 
 
-## Authors
+## Author
 
 👤 **Fuad Nabiyev**
 
